@@ -65,6 +65,7 @@ $("#add-train-btn").on("click", function(event) {
 //    in the html when a user adds an entry
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   
+  counter++;
   console.log(childSnapshot.val());
 
   // Store everything into a variable.
